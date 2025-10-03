@@ -1,10 +1,7 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Batsman from './batsman'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   function handleClick(){
     alert("Clicked 1")
@@ -22,6 +19,7 @@ function App() {
   return (
     <>
       <h1>Vite + React</h1>
+      <Batsman></Batsman>
       <button onClick={handleClick}>Click me</button>
       <button onClick={handleClick2}>Click me 2</button>
       <button onClick={() => alert("clicked 3")}>Click me 3</button>
